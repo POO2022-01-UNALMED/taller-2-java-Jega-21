@@ -4,14 +4,9 @@ public class Asiento {
 	public int precio;
 	public int registro;
 	
-	void cambiarColor(String color) {
-		String [] colores = {"rojo","verde","amarillo","negro","blanco"};
-		for (int i = 0; i< colores.length; i++) {
-			if (colores[i] == color) {
-				this.color = color;
-			}
+	public void cambiarColor(String color) {
+		if (color.equals("rojo") || color.equals("verde") || color.equals("amarillo") || color.equals("negro") || color.equals("blanco")) {
+			this.color = color;
 		}
-	}
+ 	}
 }
-	
-	
